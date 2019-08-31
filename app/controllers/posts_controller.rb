@@ -33,7 +33,7 @@ class PostsController < ApplicationController
 
   def post_data
     post = Post.find(params[:id])
-    render json: post.description
+    render plain: post.description
   end
 
 private
